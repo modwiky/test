@@ -1,7 +1,7 @@
 body {
 	font-family: sans-serif ;
-	background: #222222 ;
-	color: #ccc ;
+	background: #111111 ;
+	color: #FFFCAB ;
 }
 
 main {
@@ -44,4 +44,20 @@ footer {
 }
 #nextart,#prevart {
 	max-width: 33% ;
+}
+
+a {
+  color: #FF0000;
+}
+a:link {
+  color: brown;
+}
+a:visited {
+  color: red;
+}
+a:hover {
+  color: green;
+}
+a:active {
+  color: cyan;
 }
