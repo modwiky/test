@@ -1,7 +1,7 @@
 body {
-	font-family: sans-serif ;
+	font-family: 'Baskerville', serif;
 	background: #111111 ;
-	color: #FFFCAB ;
+	color: #fabd2f ;
 }
 
 main {
@@ -47,17 +47,17 @@ footer {
 }
 
 a {
-  color: #FF0000;
-}
-a:link {
-  color: crimson;
-}
-a:visited {
-  color: brown;
-}
-a:hover {
   color: green;
 }
+a:link {
+  color: #689d6a;
+}
+a:visited {
+  color: #8ec07c;
+}
+a:hover {
+  color: #98971a;
+}
 a:active {
-  color: cyan;
+  color: #83a598;
 }
