@@ -50,10 +50,10 @@ a {
   color: green;
 }
 a:link {
-  color: #689d6a;
+  color: #8ec07c;
 }
 a:visited {
-  color: #8ec07c;
+  color: #689d6a;
 }
 a:hover {
   color: #98971a;
