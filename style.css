@@ -1,0 +1,63 @@
+body {
+	font-family: 'Baskerville', serif;
+	background: #1d2021 ;
+	color: #fabd2f ;
+}
+
+main {
+	max-width: 800px ;
+	margin: auto ;
+}
+
+img {
+	max-width: 100% ;
+    display: block;
+    margin: 0 auto;
+}
+
+header h1 {
+	text-align: center ;
+}
+
+footer {
+	text-align: center ;
+	clear: both ;
+}
+
+/* For TAGLIST.HTML */
+.taglist {
+	text-align: center ;
+	clear: both ;
+}
+
+/* For NEXTPREV.HTML */
+#nextprev {
+	/* The container for both the previous and next articles. */
+}
+#prevart {
+	float: left ;
+	text-align: left ;
+}
+#nextart {
+	float: right ;
+	text-align: right ;
+}
+#nextart,#prevart {
+	max-width: 33% ;
+}
+
+a {
+  color: green;
+}
+a:link {
+  color: #8ec07c;
+}
+a:visited {
+  color: #689d6a;
+}
+a:hover {
+  color: #98971a;
+}
+a:active {
+  color: #83a598;
+}
