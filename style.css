@@ -1,71 +1,127 @@
+/* Gruvbox Color Palette */
+:root {
+    --bg-dark: #282828;
+    --bg-light: #3c3836;
+    --text-light: #ebdbb2;
+    --text-dark: #d5c4a1;
+    --yellow: #fabd2f;
+    --orange: #fe8019;
+    --red: #fb4934;
+    --green: #b8bb26;
+    --darkgreen: #98971a;
+    --blue: #83a598;
+}
+
+/* Body */
 body {
-	font-family: 'Georgia', serif;
-	background: #282828 ;
-	color: #ebdbb2 ;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-family:"Fira Code", monospace;
+    line-height: 1.5;
 }
 
+/* Header */
+header {
+    color: var(--yellow);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Sub-Header (Example Class) */
+.sub-header {
+    color: var(--blue);
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* Navigation */
+nav {
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: var(--yellow);
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: var(--red);
+}
+
+/* Main Content */
 main {
-	max-width: 800px ;
-	margin: auto ;
+    max-width: 800px;
+    margin: 20px auto;
 }
 
-img {
-	max-width: 100% ;
+/* Links */
+a {
+    color: var(--green);
+}
+
+a:visited {
+    color: var(--darkgreen)
+}
+
+a:hover {
+    color: var(--orange);
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    color: var(--text-dark);
+    margin-top: 20px;
+}
+
+/* Center Images */
+.center {
+    text-align: center;
+}
+
+.center img {
     display: block;
     margin: 0 auto;
+    border-radius: 8px;
+    max-width: 100%;
 }
 
-header h1 {
-	text-align: center ;
-}
-
-h4 {
-    text-align: center ;
-}
-
-footer {
-	text-align: center ;
-	clear: both ;
-}
-
-/* For TAGLIST.HTML */
-.taglist {
-	text-align: center ;
-	clear: both ;
-}
-
-/* For NEXTPREV.HTML */
+/* Next-Previous Navigation */
 #nextprev {
-	/* The container for both the previous and next articles. */
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 40px;
 }
+
+/* Previous Article (Left) */
 #prevart {
-	float: left ;
-	text-align: left ;
+    text-align: left;
+    flex: 1;
 }
+
+/* Next Article (Right) */
 #nextart {
-	float: right ;
-	text-align: right ;
-}
-#nextart,#prevart {
-	max-width: 33% ;
+    text-align: right;
+    flex: 1;
 }
 
-a {
-  color: green;
-}
-a:link {
-  color: #8ec07c;
-}
-a:visited {
-  color: #689d6a;
-}
-a:hover {
-  color: #98971a;
-}
-a:active {
-  color: #83a598;
+/* Ensure proper spacing when only one link is present */
+#prevart:empty {
+    visibility: hidden;
 }
 
-.center {
-    text-align:center;
+/* Style the links */
+#nextprev a {
+    color: var(--yellow);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#nextprev a:hover {
+    color: var(--red);
 }
