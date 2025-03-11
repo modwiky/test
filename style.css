@@ -16,7 +16,7 @@
 body {
     background-color: var(--bg-dark);
     color: var(--text-light);
-    font-family:"Fira Code", monospace;
+    font-family: serif;
     line-height: 1.5;
 }
 
