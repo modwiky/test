@@ -1,15 +1,11 @@
-/* Gruvbox Color Palette */
+/* Soft Paper-Like Color Scheme */
 :root {
-    --bg-dark: #282828;
-    --bg-light: #3c3836;
-    --text-light: #ebdbb2;
-    --text-dark: #d5c4a1;
-    --yellow: #fabd2f;
-    --orange: #fe8019;
-    --red: #fb4934;
-    --green: #b8bb26;
-    --darkgreen: #98971a;
-    --blue: #83a598;
+    --bg-dark: #E3E3DC; /* Soft off-white background */
+    --bg-light: #F5F5F5; /* Slightly brighter */
+    --text-light: #3F3F3F; /* Dark gray for readability */
+    --text-dark: #5F5F5F; /* Slightly lighter gray */
+    --link-color: #506070; /* Muted blue for links */
+    --hover-color: #8FBC8F; /* Soft green for hover effects */
 }
 
 /* Body */
@@ -17,12 +13,13 @@ body {
     background-color: var(--bg-dark);
     color: var(--text-light);
     font-family: serif;
-    line-height: 1.5;
+    font-weight: 400;
+    line-height: 1.6;
 }
 
 /* Header */
 header {
-    color: var(--yellow);
+    color: var(--text-dark);
     text-align: center;
     font-size: 1.5rem;
     font-weight: bold;
@@ -30,7 +27,7 @@ header {
 
 /* Sub-Header (Example Class) */
 .sub-header {
-    color: var(--blue);
+    color: var(--text-dark);
     text-align: center;
     font-size: 1.2rem;
 }
@@ -42,34 +39,33 @@ nav {
 }
 
 nav a {
-    color: var(--yellow);
+    color: var(--link-color);
     text-decoration: none;
     margin: 0 15px;
 }
 
 nav a:hover {
-    color: var(--red);
+    color: var(--hover-color);
 }
 
 /* Main Content */
 main {
-    max-width: 800px;
+    max-width: 600px;
     margin: 20px auto;
 }
 
 /* Links */
 a {
-    color: var(--green);
+    color: var(--link-color);
 }
 
 a:visited {
-    color: var(--darkgreen)
+    color: var(--text-dark);
 }
 
 a:hover {
-    color: var(--orange);
+    color: var(--hover-color);
 }
-
 
 /* Footer */
 footer {
@@ -117,11 +113,64 @@ footer {
 
 /* Style the links */
 #nextprev a {
-    color: var(--yellow);
+    color: var(--link-color);
     font-weight: bold;
     text-decoration: none;
 }
 
 #nextprev a:hover {
-    color: var(--red);
+    color: var(--hover-color);
+}
+
+/* Automatic Dark Mode Based on System Preferences */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-dark: #3F3F3F; /* Zenburn dark gray */
+        --bg-light: #4F4F4F; /* Slightly lighter gray */
+        --text-light: #DCDCCC; /* Soft beige for readability */
+        --text-dark: #9CA786; /* Muted green for contrast */
+        --link-color: #8CD0D3; /* Soft cyan for links */
+        --hover-color: #F0DFAF; /* Light yellow for hover effects */
+    }
+
+    body {
+        background-color: var(--bg-dark);
+        color: var(--text-light);
+    }
+
+    nav a, #nextprev a {
+        color: var(--link-color);
+    }
+
+    nav a:hover, #nextprev a:hover {
+        color: var(--hover-color);
+    }
+}
+
+    body {
+        background-color: var(--bg-dark);
+        color: var(--text-light);
+    }
+
+    nav a, #nextprev a {
+        color: var(--link-color);
+    }
+
+    nav a:hover, #nextprev a:hover {
+        color: var(--hover-color);
+    }
+}
+
+    body {
+        background-color: var(--bg-dark);
+        color: var(--text-light);
+    }
+
+    nav a, #nextprev a {
+        color: var(--text-light);
+    }
+
+    nav a:hover, #nextprev a:hover {
+        color: var(--text-dark);
+    }
 }
