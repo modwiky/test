@@ -1,31 +1,31 @@
-/* Soft Paper-Like Color Scheme */
+/* 2010s Style Color Scheme */
 :root {
-    --bg-dark: #E3E3DC; /* Soft off-white background */
-    --bg-light: #F5F5F5; /* Slightly brighter */
-    --text-light: #3F3F3F; /* Dark gray for readability */
-    --text-dark: #5F5F5F; /* Slightly lighter gray */
-    --link-color: #506070; /* Muted blue for links */
-    --hover-color: #8FBC8F; /* Soft green for hover effects */
+    --bg-dark: #F7F7F7; /* Soft white background */
+    --bg-light: #E8E8E8; /* Light gray for secondary areas */
+    --text-light: #333333; /* Dark text for high contrast */
+    --text-dark: #555555; /* Lighter gray for secondary text */
+    --link-color: #0088CC; /* Bold, bright blue for links */
+    --hover-color: #FF5733; /* Strong orange-red for hover effects */
 }
 
 /* Body */
 body {
     background-color: var(--bg-dark);
     color: var(--text-light);
-    font-family: 'Georgia', serif; /* More readable serif font */
-    font-size: 18px; /* Slightly larger text for readability */
+    font-family: 'Arial', sans-serif; /* Classic web-safe font */
+    font-size: 16px; /* Standard size */
     line-height: 1.8; /* Increase line spacing */
     letter-spacing: 0.4px; /* Improve character spacing */
     padding: 20px; /* Add padding for better layout */
     text-align: justify; /* Justify text for better readability */
-
 }
 
 /* Header */
 header {
     color: var(--text-dark);
     text-align: center;
-    font-size: 1.5rem;
+    font-family: 'Helvetica', sans-serif; /* Sleek sans-serif */
+    font-size: 2rem; /* Bigger size for headers */
     font-weight: bold;
 }
 
@@ -50,6 +50,7 @@ nav a {
 
 nav a:hover {
     color: var(--text-light);
+    text-decoration: underline; /* Classic hover effect */
 }
 
 /* Main Content */
@@ -60,15 +61,17 @@ main {
 
 /* Links */
 a {
-    color: var(--text-dark);
+    color: var(--link-color); /* Bold, bright blue for links */
+    text-decoration: none;
 }
 
 a:visited {
-    color: var(--text-dark);
+    color: var(--link-color);
 }
 
 a:hover {
-    color: var(--text-light);
+    color: var(--hover-color); /* Hover effect color */
+    text-decoration: underline; /* Classic hover effect */
 }
 
 /* Footer */
@@ -123,73 +126,57 @@ footer {
 }
 
 #nextprev a:hover {
-    color: var(--text-lightj);
+    color: var(--hover-color); /* Hover color for next/prev links */
+    text-decoration: underline; /* Hover underline */
+}
+
+/* Buttons */
+button {
+    background-color: var(--link-color);
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+button:hover {
+    background-color: var(--hover-color);
+}
+
+/* Form Fields */
+input, textarea {
+    border: 1px solid #ccc; /* Thin border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 8px;
+}
+
+input:focus, textarea:focus {
+    border-color: var(--link-color); /* Blue border on focus */
+    box-shadow: 0px 0px 5px rgba(0, 136, 204, 0.5); /* Blue shadow on focus */
 }
 
 /* Automatic Dark Mode Based on System Preferences */
 @media (prefers-color-scheme: dark) {
     :root {
-        --bg-dark: #3F3F3F; /* Zenburn dark gray */
-        --bg-light: #4F4F4F; /* Slightly lighter gray */
-        --text-light: #DCDCCC; /* Soft beige for readability */
-        --text-dark: #9CA786; /* Muted green for contrast */
-        --link-color: #8CD0D3; /* Soft cyan for links */
-        --hover-color: #F0DFAF; /* Light yellow for hover effects */
+        --bg-dark: #2B2B2B; /* Darker gray for background */
+        --bg-light: #3C3C3C; /* A bit lighter gray */
+        --text-light: #F0F0F0; /* Lighter text for contrast */
+        --text-dark: #D0D0D0; /* Slightly darker gray */
+        --link-color: #88D8D8; /* Soft cyan for links */
+        --hover-color: #FFD700; /* Gold for hover effects */
     }
 
     body {
-    background-color: var(--bg-dark);
-    color: var(--text-light);
-    font-family: 'Georgia', serif; /* More readable serif font */
-    font-size: 18px; /* Slightly larger text for readability */
-    line-height: 1.8; /* Increase line spacing */
-    letter-spacing: 0.5px; /* Improve character spacing */
-    padding: 20px; /* Add padding for better layout */
-}
-
-    nav a, #nextprev a {
-        color: var(--link-color);
-    }
-
-    nav a:hover, #nextprev a:hover {
-        color: var(--hover-color);
-    }
-}
-
-    body {
-    background-color: var(--bg-dark);
-    color: var(--text-light);
-    font-family: 'Georgia', serif; /* More readable serif font */
-    font-size: 18px; /* Slightly larger text for readability */
-    line-height: 1.8; /* Increase line spacing */
-    letter-spacing: 0.5px; /* Improve character spacing */
-    padding: 20px; /* Add padding for better layout */
-}
-
-    nav a, #nextprev a {
-        color: var(--link-color);
-    }
-
-    nav a:hover, #nextprev a:hover {
-        color: var(--hover-color);
-    }
-}
-
-    body {
-    background-color: var(--bg-dark);
-    color: var(--text-light);
-    font-family: 'Georgia', serif; /* More readable serif font */
-    font-size: 18px; /* Slightly larger text for readability */
-    line-height: 1.8; /* Increase line spacing */
-    letter-spacing: 0.5px; /* Improve character spacing */
-    padding: 20px; /* Add padding for better layout */
-}
-
-    nav a, #nextprev a {
+        background-color: var(--bg-dark);
         color: var(--text-light);
     }
 
+    nav a, #nextprev a {
+        color: var(--link-color);
+    }
+
     nav a:hover, #nextprev a:hover {
-        color: var(--text-dark);
+        color: var(--hover-color);
     }
 }
