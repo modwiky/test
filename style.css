@@ -56,10 +56,9 @@ nav a:hover {
 
 /* Main Content */
 main {
-    max-width: 65ch;        /* Keeps line length readable */
-    width: 90%;             /* Responsive for smaller screens */
-    margin: 2rem auto;      /* Centers and adds vertical space */
-    padding: 0 1rem;        /* Horizontal padding on small screens */
+    max-width: 720px;
+    width: 90%;
+    margin: 2rem auto;
 }
 
 /* Links */
