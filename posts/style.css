@@ -1,0 +1,179 @@
+:root {
+        --bg-dark: #3F3F3F;       /* Zenburn background */
+        --bg-light: #4F4F4F;      /* Slightly lighter gray */
+        --text-light: #DCDCCC;    /* Soft beige for text */
+        --text-dark: #AFAF87;     /* Muted olive/gray for secondary text */
+        --link-color: #8CD0D3;    /* Light cyan for links */
+        --hover-color: #E3CEAB;   /* Warm tan for hover effects */
+}
+ 
+
+
+/* Body */
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-family: serif;
+    font-size: 18px; /* Standard size */
+    line-height: 1.8; /* Increase line spacing */
+    letter-spacing: 0.4px; /* Improve character spacing */
+    padding: 20px; /* Add padding for better layout */
+    text-align: left;
+}
+
+/* Header */
+header {
+    color: var(--text-dark);
+    text-align: center;
+    font-family: serif;
+    font-size: 2rem; /* Bigger size for headers */
+    font-weight: bold;
+}
+
+/* Sub-Header (Example Class) */
+.sub-header {
+    color: var(--text-dark);
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* Navigation */
+nav {
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: var(--text-dark);
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: var(--text-light);
+    text-decoration: underline; /* Classic hover effect */
+}
+
+/* Main Content */
+main {
+    max-width: 65ch;        /* Keeps line length readable */
+    width: 90%;             /* Responsive for smaller screens */
+    margin: 2rem auto;      /* Centers and adds vertical space */
+    padding: 0 1rem;        /* Horizontal padding on small screens */
+}
+
+/* Links */
+a {
+    color: var(--link-color); /* Bold, bright blue for links */
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--link-color);
+}
+
+a:hover {
+    color: var(--hover-color); /* Hover effect color */
+    text-decoration: underline; /* Classic hover effect */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    color: var(--text-dark);
+    margin-top: 20px;
+}
+
+/* Center Images */
+.center {
+    text-align: center;
+}
+
+.center img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    max-width: 100%;
+}
+
+/* Next-Previous Navigation */
+#nextprev {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Previous Article (Left) */
+#prevart {
+    text-align: left;
+    flex: 1;
+}
+
+/* Next Article (Right) */
+#nextart {
+    text-align: right;
+    flex: 1;
+}
+
+/* Ensure proper spacing when only one link is present */
+#prevart:empty {
+    visibility: hidden;
+}
+
+/* Style the links */
+#nextprev a {
+    color: var(--text-dark);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#nextprev a:hover {
+    color: var(--hover-color); /* Hover color for next/prev links */
+    text-decoration: underline; /* Hover underline */
+}
+
+/* Buttons */
+button {
+    background-color: var(--link-color);
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+button:hover {
+    background-color: var(--hover-color);
+}
+
+/* Form Fields */
+input, textarea {
+    border: 1px solid #ccc; /* Thin border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 8px;
+}
+
+input:focus, textarea:focus {
+    border-color: var(--link-color); /* Blue border on focus */
+    box-shadow: 0px 0px 5px rgba(0, 136, 204, 0.5); /* Blue shadow on focus */
+}
+
+/* Block Quotes */
+blockquote {
+    background-color: var(--bg-light);
+    border-left: 4px solid var(--link-color);
+    margin: 1.5em 0;
+    padding: 1em 1.5em;
+    font-style: italic;
+    color: var(--text-light);
+    border-radius: 6px;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+}
+
+/* Inline Quotes */
+q {
+    quotes: "“" "”" "‘" "’";
+    font-style: italic;
+    color: var(--hover-color);
+}
