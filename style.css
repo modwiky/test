@@ -10,34 +10,34 @@ img {
   display: block;
 }
 
-/* Tango base */
+/* Solarized Light base */
 body {
   font-family: sans-serif;
   min-height: 100vh;
   max-width: 850px;
   padding: 0 16px;
   margin: auto;
-  color: #2E1A47‎;            /* neutral dark gray */
-  background: #fcf3f2;       /* light gray-beige background */
+  color: #666666
+  background: #eee8d5
 }
 
-/* Headings - Tango accents */
-h1 { color: #204A87; }       /* sky blue (Tango blue) */
-h2 { color: #CE5C00; }       /* orange-brown */
-h3 { color: #4E9A06; }       /* green */
-h4 { color: #75507B; }       /* plum purple */
-h5, h6 { color: #5C3566; }   /* deep purple */
+/* Headings - Solarized accents */
+h1 { color: #268bd2; }       /* blue */
+h2 { color: #cb4b16; }       /* orange */
+h3 { color: #859900; }       /* green */
+h4 { color: #6c71c4; }       /* violet */
+h5, h6 { color: #d33682; }   /* magenta */
 
 /* Links */
 a {
-  color: #3465A4;            /* link blue */
+  color: #268bd2;            /* link blue */
   text-decoration: none;
 }
 a:hover {
-  color: #729FCF;            /* lighter blue hover */
+  color: #2aa198;            /* cyan hover */
 }
 a:visited {
-  color: #75507B;            /* purple visited links */
+  color: #6c71c4;            /* violet visited links */
 }
 
 h1, h2 { text-align: left; }
@@ -47,15 +47,15 @@ h2, h3 { line-height: 1.2; }
 footer {
   text-align: center;
   clear: both;
-  color: #555753;            /* medium gray text */
-  border-top: 1px solid #D3D7CF;
+  color: #586e75;            /* base01 - subtle text */
+  border-top: 1px solid #eee8d5;
   padding-top: 1em;
 }
 
 .taglist {
   text-align: center;
   clear: both;
-  color: #555753;
+  color: #586e75;
 }
 
 /* Navigation */
