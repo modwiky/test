@@ -1,3 +1,4 @@
+/* Layout */
 main {
   max-width: 600px;
   margin: auto;
@@ -10,44 +11,58 @@ img {
   display: block;
 }
 
-/* Solarized Light base */
+/* ----------------------------------------------------
+   Solarized Light Base Styles
+---------------------------------------------------- */
 body {
   font-family: sans-serif;
   min-height: 100vh;
   max-width: 850px;
   padding: 0 16px;
   margin: auto;
-  color: #666666
-  background: #eee8d5
+  color: #444444;
+  background: #ffffff;
 }
 
-/* Headings - Solarized accents */
+/* Headings (Solarized accents) */
 h1 { color: #268bd2; }       /* blue */
-h2 { color: #cb4b16; }       /* orange */
-h3 { color: #859900; }       /* green */
+h2 { color: #859900; }       /* orange */
+h3 { color: #cb4b16; }       /* green */
 h4 { color: #6c71c4; }       /* violet */
-h5, h6 { color: #d33682; }   /* magenta */
+h5,
+h6 { color: #d33682; }       /* magenta */
 
-/* Links */
+h1, h2 {
+  text-align: left;
+}
+
+h2, h3 {
+  line-height: 1.2;
+}
+
+/* ----------------------------------------------------
+   Links
+---------------------------------------------------- */
 a {
-  color: #268bd2;            /* link blue */
+  color: #268bd2;
   text-decoration: none;
 }
+
 a:hover {
   color: #2aa198;            /* cyan hover */
 }
+
 a:visited {
-  color: #6c71c4;            /* violet visited links */
+  color: #6c71c4;            /* violet visited */
 }
 
-h1, h2 { text-align: left; }
-h2, h3 { line-height: 1.2; }
-
-/* Footer and taglist */
+/* ----------------------------------------------------
+   Footer + Taglist
+---------------------------------------------------- */
 footer {
   text-align: center;
   clear: both;
-  color: #586e75;            /* base01 - subtle text */
+  color: #586e75;
   border-top: 1px solid #eee8d5;
   padding-top: 1em;
 }
@@ -58,8 +73,12 @@ footer {
   color: #586e75;
 }
 
-/* Navigation */
-#nextprev { /* container for prev/next */ }
+/* ----------------------------------------------------
+   Navigation (Next / Prev)
+---------------------------------------------------- */
+#nextprev {
+  /* container for prev/next */
+}
 
 #prevart {
   float: left;
@@ -71,6 +90,42 @@ footer {
   text-align: right;
 }
 
-#nextart, #prevart {
+#nextart,
+#prevart {
   max-width: 33%;
+}
+
+/* ----------------------------------------------------
+   Wikipedia-style Footnotes
+---------------------------------------------------- */
+.footnotes {
+  font-size: 0.80em;
+  line-height: 1.25;
+  color: #4a4a4a;
+  margin-top: 2em;
+  padding-top: 0.5em;
+}
+
+.footnotes ol {
+  margin: 0;
+  padding-left: 1.6em;    /* mirip indent Wikipedia */
+}
+
+.footnotes li {
+  margin-bottom: 0.25em;   /* jarak antar baris rapat */
+  padding-left: 0.1em;
+}
+
+.footnotes li::marker {
+  font-size: 0.75em;        /* angka kecil */
+}
+
+.footnotes a {
+  color: #0645ad;           /* warna link mirip Wikipedia */
+  text-decoration: none;
+}
+
+.footnotes a:hover {
+  text-decoration: underline;
+  color: #0b0080;
 }
